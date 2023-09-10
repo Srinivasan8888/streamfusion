@@ -1,0 +1,12 @@
+/* dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    /* Optionally, you can add more styling here, e.g., background-color, height, etc. */
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    /* Optionally, you can add padding, margins, or other styling here */
+  }
+  

@@ -1,0 +1,16 @@
+.section {
+  margin: 0 auto; /* Center horizontally */
+  max-width: 400px; /* Max width for responsiveness */
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  /* Add other styles here */
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    max-width: 90%; /* Adjust the maximum width for smaller screens */
+  }
+}
