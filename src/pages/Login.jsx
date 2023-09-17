@@ -3,8 +3,13 @@ import { useNavigate } from "react-router-dom";
 import bg from "../img/bg.jpg";
 import G from "../img/G.svg";
 
+
 function Login() {
   const navigate = useNavigate();
+
+  function singuppage() {
+    navigate("/signup");
+  }
 
   function gotodashboard() {
     navigate("/dashboard");
@@ -54,7 +59,10 @@ function Login() {
           </button>
         </form>
 
-        <p className="flex justify-center mt-3">Don't have an account?&nbsp; {" "}<a href="javascript:void(0)" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+        {/* <p className="flex justify-center mt-3">Don't have an account?&nbsp; {" "}<a href={Signup} className="font-medium text-indigo-600 hover:text-indigo-500">Sign Up</a>
+        </p> */}
+
+        <p className="flex justify-center mt-3">Don't have an account?&nbsp; {" "}<button className="font-medium text-indigo-600 hover:text-indigo-500" onClick={singuppage}>Sign up</button>
         </p>
         <button className="w-full flex items-center justify-center gap-x-3 py-2.5 mt-5 border rounded-lg text-sm font-medium hover:bg-gray-50 duration-150 active:bg-gray-100">
             <img src={G} alt="Google Icon" className="w-5 h-5 justify-end" />

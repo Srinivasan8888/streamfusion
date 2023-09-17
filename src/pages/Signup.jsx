@@ -6,6 +6,10 @@ import G from "../img/G.svg"
 function Signup() {
   const navigate = useNavigate();
 
+  function signinpage() {
+    navigate("/signin");
+  }
+
   function gotodashboard() {
     navigate("/dashboard");
   }
@@ -20,15 +24,13 @@ function Signup() {
     <div className="bg-container min-h-screen flex items-center justify-center" style={containerStyle}>
       <div className="max-w-sm w-full text-gray-600 bg-white bg-opacity-90 rounded-lg p-6">
         <div className="text-center">
-          <img src="https://floatui.com/logo.svg" width={150} className="mx-auto" />
           <div className="mt-5 space-y-2">
             <h3 className="text-gray-800 text-2xl font-bold sm:text-3xl">Sign up</h3>
-            <p className="">
+            <br></br>
+            <p className="mt-1">
               Already have an account?{" "}
-              <a href="javascript:void(0)" className="font-medium text-indigo-600 hover:text-indigo-500">
-                Log in
-              </a>
-            </p>
+              <button className="font-medium text-indigo-600 hover:text-indigo-500" onClick={signinpage}>Sign-In</button>
+        </p>
           </div>
         </div>
         <form

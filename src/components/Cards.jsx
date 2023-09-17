@@ -1,10 +1,9 @@
 import React from "react";
-import "./css/cards.css";
 
 const Cards = () => {
   return (
-    <div className="section">
-      <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div className="flex-grow ml-[100px] mr-[30px]">
+      <div className=" p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
           Work fast from anywhere
         </h5>
@@ -72,3 +71,5 @@ const Cards = () => {
 };
 
 export default Cards;
+
+
