@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import '@coreui/coreui/dist/css/coreui.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { AppBar, Box, Grid, Typography } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Menu, Transition } from "@headlessui/react";
