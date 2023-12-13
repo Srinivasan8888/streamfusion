@@ -96,7 +96,7 @@ const View = () => {
             <span className="sr-only">Loading...</span>
         </div>
           ) : cameraAccess ? (
-            <video ref={videoRef} autoPlay playsInline onError={(e) => console.error('Video error:', e)} />
+            <video ref={videoRef} autoPlay playsInline onError={(e) => console.error('Video error:', e)} style={{transform: "scaleX(-1)"}} />
           ) : (
             <p>Camera access not available.</p>
           )}
